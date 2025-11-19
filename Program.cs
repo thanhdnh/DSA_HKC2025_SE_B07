@@ -144,6 +144,23 @@ public class BinarySearchTree
         }
         return parent;
     }
+
+    public int Count()
+    {
+        return 0;
+    }
+    public int CountLeaf()
+    {
+        return 0;
+    }
+    public int CountGreater(int value)
+    {
+        return 0;
+    }
+    public int Sum()
+    {
+        return 0;
+    }
 }
 
 public class Program
