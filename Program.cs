@@ -144,11 +144,17 @@ public class BinarySearchTree
         }
         return parent;
     }
+}
+
+public class Program
+{
     public static void Main(string[] args)
     {
         BinarySearchTree binaryTree = new BinarySearchTree();
-        binaryTree.Insert(23); binaryTree.Insert(16); binaryTree.Insert(45); binaryTree.Insert(3);
-        binaryTree.Insert(22); binaryTree.Insert(37); binaryTree.Insert(99);
+        binaryTree.Insert(23); binaryTree.Insert(16); 
+        binaryTree.Insert(45); binaryTree.Insert(3);
+        binaryTree.Insert(22); binaryTree.Insert(37); 
+        binaryTree.Insert(99);
         Console.WriteLine("Max:" + binaryTree.FindMax());  //hoặc dùng binaryTree.FindMax2()   
         Console.WriteLine("Min:" + binaryTree.FindMin());  //hoặc dùng binaryTree.FindMin2()
         Node node = binaryTree.Find(5);
@@ -156,6 +162,7 @@ public class BinarySearchTree
         Console.WriteLine("PreOrder Traversal:"); binaryTree.TraversePreOrder(binaryTree.Root);
         Console.WriteLine("InOrder Traversal:"); binaryTree.TraverseInOrder(binaryTree.Root);
         Console.WriteLine("PostOrder Traversal:"); binaryTree.TraversePostOrder(binaryTree.Root);
+        
         binaryTree.Remove(7); binaryTree.Remove(8);
         Console.WriteLine("PreOrder After Removing Operation:");
         binaryTree.TraversePreOrder(binaryTree.Root);
